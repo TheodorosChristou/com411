@@ -1,5 +1,5 @@
 print ("What type of cover does the book have?")
-type = input()
+type = input() 
 
 if (type == "soft"):
    print ("\nIs the book perfect-bound?")
