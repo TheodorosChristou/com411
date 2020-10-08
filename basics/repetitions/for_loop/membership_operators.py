@@ -1,6 +1,10 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 print ("What phrase do you see?") #Asks the user to input what they see
+=======
+print ("What phrase do you see?")
+>>>>>>> origin/main
 =======
 print ("What phrase do you see?")
 >>>>>>> origin/main
@@ -13,7 +17,11 @@ print ("\nReversing....\n")
 print ("The phrase is: ", end="")
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 for letter in phrase: #Begins the loop for each letter in the phrase given until it reverses it
+=======
+for letter in phrase:
+>>>>>>> origin/main
 =======
 for letter in phrase:
 >>>>>>> origin/main
