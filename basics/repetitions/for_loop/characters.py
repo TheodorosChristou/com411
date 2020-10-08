@@ -4,4 +4,4 @@ print ("\nIdentifying.....")
 print ("")
 for count in range (0,len(markings),1): #Creates a loop for each character in the markings
   print ("Index", count, ":",markings[count])
-print ("\nDone!")
+print ("\nDone!") 
