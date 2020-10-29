@@ -13,6 +13,8 @@ def run():
   for observation in observations:
     observations_set.add((observation, observations.count(observation)))
   print (observations_set)
+  for data in observations_set:
+   print(f"{data[0]} observed {data[1]} times.")
 
 
 run()
