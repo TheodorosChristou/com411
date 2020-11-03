@@ -1,5 +1,6 @@
+import os
+
 def cwd():
-  import os
   path = os.getcwd()
   print ("The current working folder is {}" .format(path))
   print ("The folder contains the following:")
@@ -8,7 +9,6 @@ def cwd():
 
 def run():
   print ("Processing...")
-  fileprint = cwd()
-  print (fileprint)
+  cwd()
 
 run()
