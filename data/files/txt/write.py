@@ -1,5 +1,5 @@
 def search(filename):
-  print ("Searching...")
+  print ("Searching..." , end="")
   sections = []
   books = []
   with open(filename) as file:
@@ -8,7 +8,6 @@ def search(filename):
         linex = line.split(":")
         sections.append(linex[1].replace('\n',''))
       else:
-        linex = line.split(":")
         books.append(line.replace('\n',''))
   
   print ("Done!")
@@ -16,10 +15,23 @@ def search(filename):
   return (sections, books)
 
 def save(filename, datatosave):
-  print ("Saving...")
-  with open(filename, "w") as file:
-    print ("Section:{}" .format(datatosave[0]))
-    print ("Books:{}" .format(datatosave[1]))
+  print ("Saving..." , end="")
+  with open((filename), "w") as file:
+    file.write("Section: ")
+    for index in range(len(datatosave[0])):
+      if (index < len(datatosave[0]) - 1):
+       file.write(f"{datatosave[0][index]},")
+      else:
+        file.write(f"{datatosave[0][index]}")
+    
+    file.write("\n")
+
+    file.write("Books: ")
+    for index in range(len(datatosave[1])):
+      if (index < len(datatosave[1]) - 1):
+       file.write(f"{datatosave[1][index]},")
+      else:
+        file.write(f"{datatosave[1][index]}")
   print ("Done!")
 
 def run():
