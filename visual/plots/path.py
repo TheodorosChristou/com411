@@ -23,6 +23,8 @@ def run():
   x = values[0]
   y = values[1]
   plt.plot(x, y, 'ro--')
+  plt.xlabel("x values")
+  plt.ylabel("y values")
   plt.show()
 
 run()
