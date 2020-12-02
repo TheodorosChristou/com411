@@ -1,7 +1,7 @@
 from human import Human
 from robot import Robot
 
-class Planet:
+class Planet2:
   
   def __init__(self):
     self.inhabitants = {
@@ -28,7 +28,7 @@ class Planet:
     self.inhabitants['robots'].remove(robot)
 
 if (__name__ == "__main__"):
-  planet = Planet()
+  planet = Planet2()
   print(repr(planet))
   planet.add_human("Theo")
   print(repr(planet))
