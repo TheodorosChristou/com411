@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Clothing(Enum):
+class ClothingSize(Enum):
   X_SMALL = 1
   SMALL = 2
   MEDIUM = 3
