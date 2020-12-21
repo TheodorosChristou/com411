@@ -14,10 +14,10 @@ class Jetpack(Tech):
   def deactivate(self):
     print ("Deactivating Jetpack")
 
-  def fly(self, speed):
+  def fly(speed):
     print (f"Flying at speed of {speed}")
 
 if __name__ == "__main__":
   jetpack = Jetpack()
   print(repr(jetpack))
-
+  Jetpack.fly(50)
